@@ -21,7 +21,20 @@ function fetchData(){
      
      fetch('https://the-fork-the-spoon.p.rapidapi.com/restaurants/v2/list?queryPlaceValueCityId=348156', options)
         .then(response => response.json())
-        .then(response => console.log(response))
+        .then(data => {
+            console.log(data.data);
+            const items = data.data
+            .map(user => {
+                return `
+                 <div class = "user">
+                 <p> Name : ${user.name}<p/> 
+                 <div/>
+                `;
+            })
+            .join("");
+            console.log (items);
+            documen
+        })
         .catch(err => console.error(err));
 }
   fetchData();
