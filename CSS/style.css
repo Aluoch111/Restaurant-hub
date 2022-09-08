@@ -1,4 +1,6 @@
+
 *{
+   font-family: sans-serif;
     padding: 0vw;
     margin: 0vw;
 }
@@ -55,5 +57,9 @@ nav ul li:hover{
     color: #ed661f;
 }
 #menu{
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
