@@ -42,6 +42,11 @@ header{
     padding: 20px;
     border-radius: 15px;
 }
+#api-data{
+    background-color: rgb(245, 83, 2);
+    padding: 20px;
+    border-radius: 15px;
+}
 #img1{
     float: right;
 }
@@ -51,7 +56,7 @@ header{
    justify-content: space-around;
 }
 #top-ratings{
-    background-color: rgb(197, 138, 60);
+    background-color: whitesmoke;
 }
 nav ul li:hover{
     color: #ed661f;
@@ -62,4 +67,7 @@ nav ul li:hover{
     justify-content: space-around;
     justify-content: space-between;
     align-items: center;
+}
+section{
+    background-color: rgb(28, 28, 26);
 }

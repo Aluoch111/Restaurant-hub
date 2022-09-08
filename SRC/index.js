@@ -9,6 +9,13 @@
    btn.addEventListener("click" , () => {
    alert("Thank you for subscribing.")
    });
+
+
+   let click = document.getElementById("api-data");
+   click.addEventListener("click",fetchData );
+   
+
+
    
 function fetchData(){
     const options = {
@@ -26,12 +33,12 @@ function fetchData(){
             const items = data.data .map( api=> {
                 return `
                  <div class = "menu">
-                 <p> Name : ${api.name}</p>
-                 <p> Specials: ${api.servesCuisine}</p>
-                 <p> Offers: ${api.bestOffer.name} </p>
-                 <p> Price-range:${api.priceRange}</p>
-                 <p> <img src = "${api.mainPhotoSrc}"  height = " 184px"/> </p>
-                 
+                    <p> Name : ${api.name}</p>
+                    <p> Specials: ${api.servesCuisine}</p>
+                    <p> Offers: ${api.bestOffer.name} </p>
+                    <p> Price-range:${api.priceRange}</p>
+                    <p> <img src = "${api.mainPhotoSrc}"  height = " 184px"/> </p>
+                    
                  </div> 
                 `;
             })
@@ -43,4 +50,4 @@ function fetchData(){
         })
         .catch(err => console.error(err));
 }
-  fetchData();
+//   fetchData();
