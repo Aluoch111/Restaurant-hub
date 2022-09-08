@@ -54,3 +54,6 @@ header{
 nav ul li:hover{
     color: #ed661f;
 }
+#menu{
+    /* display: flex; */
+}
