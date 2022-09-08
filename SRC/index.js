@@ -1,9 +1,9 @@
-  // document.addEventListener("DOMContentLoaded" ,() => {
-   //    let name1 =  prompt("Hello,what's your name?");
-   //    alert(`Welcome to our site ${name1}`);
-   // })
-   
-
+  setTimeout( welcomeMessage ,3000)
+  function welcomeMessage(){
+    let name1 =  prompt("Hello,what's your name?");
+    alert(`Welcome to our site ${name1}`);
+  }
+  
 
    let btn = document.getElementById("btn" );
    btn.addEventListener("click" , () => {
@@ -33,11 +33,12 @@ function fetchData(){
             const items = data.data .map( api=> {
                 return `
                  <div class = "menu">
+
+                    <p> <img src = "${api.mainPhotoSrc}"  height = " 184px"/> </p>
                     <p> Name : ${api.name}</p>
                     <p> Specials: ${api.servesCuisine}</p>
                     <p> Offers: ${api.bestOffer.name} </p>
                     <p> Price-range:${api.priceRange}</p>
-                    <p> <img src = "${api.mainPhotoSrc}"  height = " 184px"/> </p>
                     
                  </div> 
                 `;
@@ -50,4 +51,3 @@ function fetchData(){
         })
         .catch(err => console.error(err));
 }
-//   fetchData();
