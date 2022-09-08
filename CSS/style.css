@@ -63,3 +63,6 @@ nav ul li:hover{
     justify-content: space-between;
     align-items: center;
 }
+#menu{
+    background-color: grey;
+}
