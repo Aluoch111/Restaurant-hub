@@ -33,10 +33,15 @@ header{
     padding-left: 5vw ;
     color: white;
 }
+nav ul li:hover{
+    color: #ed661f;
+}
 .part1{
     background-color:rgb(28, 28, 26) ;
-    padding-bottom: 12vw ;
+    padding-bottom: 15vw ;
 }
+
+/* button styling */
 #btn{
     background-color: rgb(245, 83, 2);
     padding: 20px;
@@ -50,17 +55,18 @@ header{
 #img1{
     float: right;
 }
+h1{
+    text-align: center;
+}
+
+/* Ratings section */
 #img-container{
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
+   padding: 5vw;
 }
 #top-ratings{
     background-color: whitesmoke;
 }
-nav ul li:hover{
-    color: #ed661f;
-}
+/* Data from API */
 #menu{
     display: flex;
     flex-wrap: wrap-reverse;
