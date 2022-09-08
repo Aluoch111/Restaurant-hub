@@ -23,11 +23,15 @@ function fetchData(){
         .then(response => response.json())
         .then(data => {
             console.log(data.data);
-            const items = data.data .map(user => {
+            const items = data.data .map( api=> {
                 return `
-                 <div class = "user">
-                 <p> Name : "${user.name}"</p> 
-                 <p> <img src = "${user.mainPhotoSrc}"  height = " 184px"/> </p>
+                 <div class = "menu">
+                 <p> Name : ${api.name}</p>
+                 <p> Specials: ${api.servesCuisine}</p>
+                 <p> Offers: ${api.bestOffer.name} </p>
+                 <p> Price-range:${api.priceRange}</p>
+                 <p> <img src = "${api.mainPhotoSrc}"  height = " 184px"/> </p>
+                 
                  </div> 
                 `;
             })
