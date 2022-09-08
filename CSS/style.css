@@ -64,24 +64,29 @@ h1{
 #img-container{
    padding: 5vw;
 }
-#top-ratings{
-    background-color: whitesmoke;
+#ratings{
+    background-color:  rgb(28, 28, 26);
 }
 /* Data from API */
-#menu{
+#sample{
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: space-around;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: #ed661f; */
+    
+}
+.menu{
+    /* background-color: rgb(221, 184, 117); */
+    padding-left:2px;
+    padding-right: 2px;
+    margin-left: 3px;
 }
 section{
     background-color: rgb(28, 28, 26);
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
 }
 /* comments section */
 #comments{
     color: black;
+    background-color: rgba(156, 148, 139, 0.371);
+    
 }
