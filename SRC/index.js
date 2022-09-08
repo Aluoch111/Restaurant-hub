@@ -23,17 +23,19 @@ function fetchData(){
         .then(response => response.json())
         .then(data => {
             console.log(data.data);
-            const items = data.data
-            .map(user => {
+            const items = data.data .map(user => {
                 return `
                  <div class = "user">
-                 <p> Name : ${user.name}<p/> 
-                 <div/>
+                 <p> Name : "${user.name}"</p> 
+                 <p> <img src = "${user.mainPhotoSrc}"  height = " 184px"/> </p>
+                 </div> 
                 `;
             })
+           
             .join("");
             console.log (items);
-            documen
+            document.querySelector("#menu").insertAdjacentHTML("afterbegin", items);
+            
         })
         .catch(err => console.error(err));
 }
