@@ -14,6 +14,9 @@
    let click = document.getElementById("api-data");
    click.addEventListener("click",fetchData );
    
+
+
+   
 function fetchData(){
     const options = {
         method: 'GET',
