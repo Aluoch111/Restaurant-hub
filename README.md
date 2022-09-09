@@ -1,7 +1,5 @@
 # Restaurant-hub
-Portfolio By Grace Aluoch
 
-It is a description of my resume.
 
 Table of Content
 
