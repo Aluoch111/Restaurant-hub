@@ -1,8 +1,8 @@
-//   setTimeout( welcomeMessage ,3000)
-//   function welcomeMessage(){
-//     let name1 =  prompt("Hello,what's your name?");
-//     alert(`Welcome to our site ${name1}`);
-//   }
+  setTimeout( welcomeMessage ,2000)
+  function welcomeMessage(){
+    let name1 =  prompt("Hello,what's your name?");
+    alert(`Welcome to our site ${name1}`);
+  }
   
 // Subscribe button
    let btn = document.getElementById("btn" );
@@ -47,7 +47,7 @@ function fetchData(){
 
                  <div class = "menu">
 
-                    <p> <img src = "${api.mainPhotoSrc}"  height = " 185px"/> </p>
+                    <p> <img src = "${api.mainPhotoSrc}"  height ="185px"/> </p>
                     <br>
                     <p> Name : ${api.name}</p>
                     <p> Specials: ${api.servesCuisine}</p>

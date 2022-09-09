@@ -43,12 +43,14 @@ nav ul li:hover{
 
 /* button styling */
 #btn{
-    background-color: rgb(245, 83, 2);
+    background-color: rgb(221, 184, 117);
+    background-color: ;
     padding: 20px;
     border-radius: 15px;
 }
 #api-data{
-    background-color: rgb(245, 83, 2);
+    background-color: rgb(221, 184, 117);
+    background-color: ;
     padding: 20px;
     border-radius: 15px;
 }
@@ -65,16 +67,28 @@ h1{
    padding: 5vw;
 }
 #ratings{
-    background-color:  rgb(28, 28, 26);
+    background-color:  whitesmoke;
+}
+#comments{
+    color: black;
+        margin: 10px;
+        border: 1px solid #333;
+        background: rgba(255, 255, 255, 0.75);
+        padding: 15px 20px 18px 18px;
+        border-radius: 5px;
+        box-shadow: 2px 5px 5px #333;
+}
+#img2{
+    background-color: whitesmoke;
+    align-items: center;
 }
 /* Data from API */
 #sample{
     display: flex;
-    flex-wrap: wrap-reverse;
-    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .menu{
-    /* background-color: rgb(221, 184, 117); */
     padding-left:2px;
     padding-right: 2px;
     margin-left: 3px;
@@ -85,8 +99,4 @@ section{
     padding-bottom: 6vw;
 }
 /* comments section */
-#comments{
-    color: black;
-    background-color: rgba(156, 148, 139, 0.371);
-    
-}
+
